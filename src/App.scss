@@ -1,0 +1,26 @@
+$primary-color: #604f71;
+$secondary-color: #807094;
+$main-color: #f1f1f1;
+// font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@import "components/hero/hero";
+@import "components/navbar/navbar";
+@import "components/contact/contact";
+body {
+  font-family: "Poppins", sans-serif;
+}
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    background-color: $secondary-color;
+
+    font-weight: bold;
+  }
+}
